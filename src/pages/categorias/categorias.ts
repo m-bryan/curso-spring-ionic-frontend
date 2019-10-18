@@ -11,6 +11,7 @@ import { API_CONFIG } from '../../config/api.config';
  * Ionic pages and navigation.
  */
 
+
 @IonicPage()
 @Component({
   selector: 'page-categorias',
@@ -32,8 +33,6 @@ export class CategoriasPage {
       .subscribe(response => {
         this.items = response;
       },
-        error => {
-          console.log(error);
-        });
+        error => {});
   }
 }
